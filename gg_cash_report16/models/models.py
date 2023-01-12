@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
+from num2words import num2words
 
 
-# class gg_cash_report16(models.Model):
-#     _name = 'gg_cash_report16.gg_cash_report16'
-#     _description = 'gg_cash_report16.gg_cash_report16'
-
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+class gg_cash_report(models.Model):
+    _description = 'Bank Statement Line'
+    
+    amount_text = fields.Char('Montant en lettres', compute='get_amount_text')
+    
+    
+    @api.depends('amount')
+    def get_amount_text(self):
+        for rec in self:
+            number_in_word = num2words(abs(rec.amount), lang='fr')
+            rec.amount_text = number_in_word and number_in_word.capitalize()
