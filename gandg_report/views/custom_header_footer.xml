@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="gandg_external_header_footer">
+            
+<!--             header -->
+            <div class="header">
+            <div class="col-12 mb4 align-middle " style="">
+                <img src='/gandg_report/static/src/img/gandg_header.png' align="center"/>
+            </div>
+               
+            </div>
+<!--             end header -->
+
+          <div class="article o_report_layout_standard" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id">
+              <t t-call="web.address_layout"/>
+              <t t-raw="0"/>
+          </div>
+
+<!--             footer -->
+          <div class="footer">
+            <div class="row">
+                <img src='/gandg_report/static/src/img/gandg_footer.png'/>
+            </div>
+          </div>
+<!--             end footer -->
+        </template>
+    </data>
+</odoo>
