@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "gg_cash_report16",
+    'name': "gg_cash_report",
 
     'summary': """
         Rapport de caisse""",
@@ -23,14 +23,12 @@
 
     # always loaded
     'data': [
-        #'security/ir.model.access.csv', 
-        'data/custom_paper.xml',
-        'views/cash_report_header.xml',
         'views/account_bank_statement_form.xml',
-        'qweb/cash_report.xml'
+        'views/menu_view.xml',
+        #'security/ir.model.access.csv', 
+        #'data/custom_paper.xml',
+        #'views/cash_report_header.xml',
+        #'qweb/cash_report.xml'
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+   
 }
