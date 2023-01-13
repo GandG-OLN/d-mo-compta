@@ -23,7 +23,7 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv', 
+        #'security/ir.model.access.csv', 
         'data/custom_paper.xml',
         'views/cash_report_header.xml',
         'views/account_bank_statement_form.xml',
