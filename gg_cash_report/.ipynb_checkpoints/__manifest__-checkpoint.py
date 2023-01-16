@@ -23,6 +23,7 @@
 
     # always loaded
     'data': [
+        #'security/ir.model.access.csv', 
         'data/custom_paper.xml',
         'views/cash_report_header.xml',
         'qweb/cash_report.xml'
