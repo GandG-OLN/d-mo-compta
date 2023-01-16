@@ -1,5 +1,0 @@
-<odoo>
-    <menuitem id="menu_principale" name="GG CASH" web_icon="gg_cash_report16,static/description/icon.png" sequence="10">
-        <menuitem id="gg_cash_menu" name="Cash" action="action_create_cash"/>
-    </menuitem>
-</odoo>

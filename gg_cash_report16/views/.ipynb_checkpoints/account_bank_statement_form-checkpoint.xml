@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<odoo>
-    <record id="action_create_cash" model="ir.actions.act_window">
-        <field name="name">Cash</field>
-        <field name="res_model">account.bank.statement</field>
-        <field name="view_mode">tree,form</field>
-    </record> 
-</odoo>
-            
