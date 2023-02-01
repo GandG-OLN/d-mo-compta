@@ -4,7 +4,7 @@ from odoo import models, fields, api
 from num2words import num2words
 
 
-class gg_cash_report16(models.Model):
+class account_bank_statement(models.Model):
    
     _inherit = 'account.bank.statement.line'
     _description = 'Bank Statement Line'
@@ -27,7 +27,4 @@ class gg_cash_report16(models.Model):
 #            number_in_word = num2words(abs(record.amount), lang='fr')
 #            record.amount_text = number_in_word and number_in_word.capitalize()
                    
-            
-            
-  
-
+    

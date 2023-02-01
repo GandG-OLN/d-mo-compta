@@ -1,11 +1,11 @@
-<odoo>
+ <odoo>
     <data>
         
         <template id="cash_report_document">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
                     <t t-foreach="o.line_ids" t-as="line">
-                        <t t-call="gg_cash_report16.cash_report_external_header">
+                        <t t-call="gg_cash_report.cash_report_external_header">
                           <br/>
                           <div class="page">
                               <div>
@@ -71,8 +71,8 @@
             model="account.bank.statement"
             string="Rapport de Caisse"
             report_type="qweb-pdf"
-            name="gg_cash_report16.cash_report_document"
-            file="gg_cash_report16.cash_report"
+            name="gg_cash_report.cash_report_document"
+            file="gg_cash_report.cash_report"
             />
         
     </data>
